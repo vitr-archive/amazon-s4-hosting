@@ -1,4 +1,4 @@
-# s3-secure-hosting
+# Secure S3 Static Site Hosting
 Secure static website hosting with AWS
 
 
