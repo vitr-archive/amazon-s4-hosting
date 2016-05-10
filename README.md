@@ -12,9 +12,15 @@ Secure static website hosting with AWS
 
 
 ```
+echo cd /root/.aws >> ~/.bashrc
+
 DOMAIN="larawhale.com"
+
 aws route53 create-hosted-zone --name $DOMAIN --caller-reference "`date`" --hosted-zone-config Comment="created by amazon-s4-hosting"
 
+ZONE="ZXMGFL45UP69N"
+
+aws route53 change-resource-record-sets --hosted-zone-id $ZONE --change-batch file://resource-record-sets.json
 
 ```
 

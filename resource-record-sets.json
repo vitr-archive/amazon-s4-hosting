@@ -1,51 +1,30 @@
 {
-    "ResourceRecordSets": [
+  "Comment": "optional comment about the changes in this change batch request",
+  "Changes": [
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "larawhale.com.",
+        "Type": "A",
+        "AliasTarget": {
+            "HostedZoneId": "ZXMGFL45UP69N",
+            "EvaluateTargetHealth": false,
+            "DNSName": "dn78a04athqn9.cloudfront.net."
+        }
+      }
+    },
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet":
         {
             "AliasTarget": {
-                "HostedZoneId": "Z2FDTNDATAQYW2",
-                "EvaluateTargetHealth": false,
-                "DNSName": "dn78a04athqn9.cloudfront.net."
-            },
-            "Type": "A",
-            "Name": "vit.online."
-        },
-        {
-            "ResourceRecords": [
-                {
-                    "Value": "ns-95.awsdns-11.com."
-                },
-                {
-                    "Value": "ns-2007.awsdns-58.co.uk."
-                },
-                {
-                    "Value": "ns-800.awsdns-36.net."
-                },
-                {
-                    "Value": "ns-1189.awsdns-20.org."
-                }
-            ],
-            "Type": "NS",
-            "Name": "vit.online.",
-            "TTL": 172800
-        },
-        {
-            "ResourceRecords": [
-                {
-                    "Value": "ns-95.awsdns-11.com. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
-                }
-            ],
-            "Type": "SOA",
-            "Name": "vit.online.",
-            "TTL": 900
-        },
-        {
-            "AliasTarget": {
-                "HostedZoneId": "Z2FDTNDATAQYW2",
+                "HostedZoneId": "ZXMGFL45UP69N",
                 "EvaluateTargetHealth": false,
                 "DNSName": "dn78a04athqn9.cloudfront.net."
             },
             "Type": "A",
             "Name": "www.vit.online."
         }
-    ]
+    }
+  ]
 }
