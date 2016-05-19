@@ -136,20 +136,42 @@
             "Compress": "true",
             "TargetOriginId": "S3Origin",
             "ForwardedValues": {
+              "Cookies": {
+                "Forward": "all"
+              },
+              "Headers": [
+                "*"
+              ],
               "QueryString": "true"
             },
-            "ViewerProtocolPolicy": "allow-all"
+            "ViewerProtocolPolicy": "redirect-to-https"
           },
           "Origins": [
             {
               "DomainName": {
-                "Fn::GetAtt": [
-                  "Bucket",
-                  "DomainName"
+                "Fn::Join": [
+                  ".",
+                  [
+                    {
+                      "Ref": "DomainName"
+                    },
+                    {
+                      "Fn::FindInMap": [
+                        "RegionMap",
+                        {
+                          "Ref": "AWS::Region"
+                        },
+                        "websiteendpoint"
+                      ]
+                    }
+                  ]
                 ]
               },
               "Id": "S3Origin",
-              "S3OriginConfig": {}
+              "CustomOriginConfig": {
+                "HTTPPort": "80",
+                "OriginProtocolPolicy": "http-only"
+              }
             }
           ],
           "PriceClass": "PriceClass_All",
@@ -185,9 +207,15 @@
             "Compress": "true",
             "TargetOriginId": "S3OriginWWW",
             "ForwardedValues": {
+              "Cookies": {
+                "Forward": "all"
+              },
+              "Headers": [
+                "*"
+              ],
               "QueryString": "true"
             },
-            "ViewerProtocolPolicy": "allow-all"
+            "ViewerProtocolPolicy": "redirect-to-https"
           },
           "Origins": [
             {
@@ -214,7 +242,6 @@
               "Id": "S3OriginWWW",
               "CustomOriginConfig": {
                 "HTTPPort": "80",
-                "HTTPSPort": "443",
                 "OriginProtocolPolicy": "http-only"
               }
             }
