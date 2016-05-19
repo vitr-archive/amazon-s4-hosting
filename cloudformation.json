@@ -86,12 +86,7 @@
                     ]
                   ]
                 }
-              ],
-              "Condition": {
-                "StringEqualsIgnoreCase": {
-                  "aws:UserAgent": "Amazon CloudFront"
-                }
-              }
+              ]
             }
           ]
         }
