@@ -55,8 +55,7 @@
           "IndexDocument": "index.html",
           "ErrorDocument": "error.html"
         }
-      },
-      "DeletionPolicy": "Retain"
+      }
     },
     "BucketPolicy": {
       "Type": "AWS::S3::BucketPolicy",
@@ -133,6 +132,7 @@
               "GET",
               "HEAD"
             ],
+            "MinTTL": "0",
             "Compress": "true",
             "TargetOriginId": "S3Origin",
             "ForwardedValues": {
@@ -152,7 +152,7 @@
               "S3OriginConfig": {}
             }
           ],
-          "PriceClass": "PriceClass_100",
+          "PriceClass": "PriceClass_All",
           "DefaultRootObject": "index.html",
           "Enabled": true,
           "Aliases": [
@@ -181,6 +181,7 @@
               "GET",
               "HEAD"
             ],
+            "MinTTL": "0",
             "Compress": "true",
             "TargetOriginId": "S3OriginWWW",
             "ForwardedValues": {
@@ -218,7 +219,7 @@
               }
             }
           ],
-          "PriceClass": "PriceClass_100",
+          "PriceClass": "PriceClass_All",
           "Enabled": true,
           "Aliases": [
             {
