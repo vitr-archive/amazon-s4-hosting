@@ -4,7 +4,7 @@
 ![image](https://cloud.githubusercontent.com/assets/2770290/15446335/acd459d6-1f60-11e6-8231-5f3685db1351.png)![image](https://cloud.githubusercontent.com/assets/2770290/15446350/645572b6-1f61-11e6-9329-1c459b7796c4.png)
 
 
-You bought a domain, but have no hosting solution yet. This project might help you to set up an affordable AWS hosting for your site in about 30 minutes. Here is what you get in the end:
+You bought a domain, but have no hosting solution yet. This project might help you to set up an affordable AWS hosting for your site in about 30 minutes. It's a way faster then going through many howto's on the web. I'm trying to automate things as much as it possible here, but some manual labor is still needed. Here is what you get in the end:
  - secured static website available on https://yourdomain.com
  - Hosted DNS zone for yourdomain.com in Route 53
  - S3 bucket with your content
