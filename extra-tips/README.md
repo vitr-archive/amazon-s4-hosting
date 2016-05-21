@@ -1,6 +1,17 @@
 
 # Amazon S4 Hosting Extra Tips
 
+To avoid content duplication the bucket access is restricted to CloudFront agent, you can't access the bucket directly, e.g. in your browser. read more Avoiding the Duplicate Content Penalty with AWS S3 and CloudFront  (this is actually debatable, as Google is smart enough nowadays, I wouldn't worry about this if you don't promote direct bucket link anywhere)
+https://bryce.fisher-fleig.org/blog/avoiding-duplicate-content-penalty-with-aws-s3-and-cloudfront/
+
+- [x] Gzip compression handled by cloud front
+
+I'd recommend to format cloudformation.json with aws web based editor.
+It formats json, sorts fields, adds spaces, etc. I spotted a few errors in my code using it.
+Usually I use Atom
+
+change S3 origin to custom, then we can control the cache!!!
+
 GOTCHAS
 http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html?shortFooter=true
 HostedZoneId
