@@ -1,5 +1,4 @@
-
-# Amazon S3 Secure Static Site (S4) Hosting
+# Amazon S3 Secure Static Site (S4) Hosting [![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/amazon-s4-hosting?flat&useReferer)](https://github.com/vitr/google-analytics-beacon)
 
 ![image](https://cloud.githubusercontent.com/assets/2770290/15445976/ad175a64-1f52-11e6-82e4-420d809283e3.png)  
 You bought a domain, but have no hosting solution yet. This project might help you to set up an affordable AWS hosting for your site in about 30 minutes. Here is what you get in the end:
@@ -85,11 +84,6 @@ Dont' forget to change NS records with your domain registrar
 
 
 
-
-
-
-
-
 Impossible to create with CloudFormation  
 - origin access identities (for CloudFront)
 - SSL Certificates
@@ -97,6 +91,7 @@ Impossible to create with CloudFormation
 More tips and gotchas you can find in [Extra Tips](/extra-tips/README.md)
 
 ### Roadmap
+- [ ] Automated test with [CasperJS](https://github.com/vitr/docker-casperjs)
 - [ ] Create SSL/TLS Certificate with Amazon Certificate Manager(requires manual approval via email)
 - [ ] Upload content & set permissions
 - [ ] Update NS records (Route53) (custom domain for s3 site hosting)
