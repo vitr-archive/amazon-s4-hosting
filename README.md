@@ -1,11 +1,5 @@
 # Amazon S3 Secure Static Site (S4) Hosting [![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/amazon-s4-hosting?flat&useReferer)](https://github.com/vitr/google-analytics-beacon)
-
-![image](https://cloud.githubusercontent.com/assets/2770290/15445976/ad175a64-1f52-11e6-82e4-420d809283e3.png)  
-![image](https://cloud.githubusercontent.com/assets/2770290/15446321/39d2d7f0-1f60-11e6-9aac-84523afdcb04.png)
-
-![image](https://cloud.githubusercontent.com/assets/2770290/15446335/acd459d6-1f60-11e6-8231-5f3685db1351.png)
-
-![image](https://cloud.githubusercontent.com/assets/2770290/15446323/57374e7a-1f60-11e6-9d92-bd868a5e70a6.png)
+![image](https://cloud.githubusercontent.com/assets/2770290/15445976/ad175a64-1f52-11e6-82e4-420d809283e3.png) ![image](https://cloud.githubusercontent.com/assets/2770290/15446321/39d2d7f0-1f60-11e6-9aac-84523afdcb04.png)![image](https://cloud.githubusercontent.com/assets/2770290/15446335/acd459d6-1f60-11e6-8231-5f3685db1351.png)![image](https://cloud.githubusercontent.com/assets/2770290/15446323/57374e7a-1f60-11e6-9d92-bd868a5e70a6.png)
 
 
 
