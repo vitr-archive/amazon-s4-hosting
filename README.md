@@ -12,15 +12,16 @@ On Amazon's free tier it's gonna cost you **50c a month** (the price for one Hos
 
 ### Quick Step-by-step Instructions
 
-1. run cloudformation (~15 mins)
-2. update NS records from Route 53 in your domain registrar control panel (give it some time to propagate, I use namecheap, usual it takes no longer than a minute), sometime you may have a timeout
-3. upload site content
-4. run sh script 2 times, e.g.
-    ./my.sh larawhale.com vitdotonline@gmail.com
-    ./my.sh www.larawhale.com vitdotonline@gmail.com
-
-5. update CDNs (manual(()))
-    General set freshly created certificate and behavior
+1. Run cloudformation (~15 mins)
+2. Update NS records from Route 53 in your domain registrar control panel (give it some time to propagate, I use namecheap, usually it takes no longer than a minute), sometime you may have a timeout
+3. Upload site content
+4. Get the SSL certificates  
+  a) Run sh script 2 times, e.g.  
+    `./letsencrypt.sh yourdomain.com youremail@domain.com`  
+    `./letsencrypt.sh www.yourdomain.com youremail@domain.com`  
+  or  
+  b) Use Amazon Certificate Manager
+5. Update CDNs (manual), set freshly created certificates
 
 
 
@@ -91,6 +92,7 @@ Impossible to create with CloudFormation
 More tips and gotchas you can find in [Extra Tips](/extra-tips/README.md)
 
 ### Roadmap
+- [ ] add letsencrypt.sh
 - [ ] Docker image/compose for running aws cli, lego and bash scripts
 - [ ] Automated test with [CasperJS](https://github.com/vitr/docker-casperjs)
 - [ ] Create SSL/TLS Certificate with Amazon Certificate Manager(requires manual approval via email)
