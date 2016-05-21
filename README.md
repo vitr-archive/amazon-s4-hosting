@@ -91,6 +91,7 @@ Impossible to create with CloudFormation
 More tips and gotchas you can find in [Extra Tips](/extra-tips/README.md)
 
 ### Roadmap
+- [ ] Docker image/compose for running aws cli, lego and bash scripts
 - [ ] Automated test with [CasperJS](https://github.com/vitr/docker-casperjs)
 - [ ] Create SSL/TLS Certificate with Amazon Certificate Manager(requires manual approval via email)
 - [ ] Upload content & set permissions
