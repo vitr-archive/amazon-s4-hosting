@@ -12,6 +12,10 @@ Usually I use Atom
 
 change S3 origin to custom, then we can control the cache!!!
 
+#### Cache headers on S3
+add the header for all items in the bucket
+    aws s3 cp s3://your.bucket/ s3://your.bucket/ --recursive --metadata-directive REPLACE --cache-control max-age=604800
+
 GOTCHAS
 http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html?shortFooter=true
 HostedZoneId
