@@ -14,6 +14,7 @@ change S3 origin to custom, then we can control the cache!!!
 
 #### Cache headers on S3
 add the header for all items in the bucket
+
     aws s3 cp s3://your.bucket/ s3://your.bucket/ --recursive --metadata-directive REPLACE --cache-control max-age=604800
 
 GOTCHAS
